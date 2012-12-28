@@ -152,7 +152,7 @@ function get_latitude_longitude_from_address($address) {
     return [
         'latitude' => $response['results'][0]['geometry']['location']['lat'],
         'longitude' => $response['results'][0]['geometry']['location']['lng'],
-        'response' => $response
+        'geocode_response' => $response
     ];
 }
 /*
